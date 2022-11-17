@@ -3,13 +3,17 @@
 import AppList from './AppList.vue'
 
 export default {
-    name:'AppMain'
+    name:'AppMain',
+    components:{
+        AppList
+    }
 }
 </script>
 
 <template>
   <div class="container my-5 p-3">
-
+    
+    <AppList/>
   </div>
 </template>
 

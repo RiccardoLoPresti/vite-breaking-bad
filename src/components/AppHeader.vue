@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-    <header class="d-flex align-items-center h-100">
+    <header class="d-flex align-items-center h-100 pt-1">
         <img src="/brba-logo.png" alt="logo">
-        <h1 class="fw-bold px-3">Breaking Bad Api</h1>
+        <h1 class="text-white fw-bold px-3">Breaking Bad Api</h1>
     </header>
 </template>
 
