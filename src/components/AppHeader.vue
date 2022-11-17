@@ -13,8 +13,6 @@ export default {
 
 
 <style lang="scss" scoped>
-@use './src/styles/general';
-@use './src/styles/partials/vars' as *;
 
 header{
     height: 60px;

@@ -18,10 +18,11 @@ export default {
   },
   methods:{
     getApi(){
-      axios.get('https://www.breakingbadapi.com/api/characters')
+      store.isLoaded = false;
+      axios.get(store.apiUrl)
       .then(result => {
         store.characterList = result.data
-        console.log(store.characterList);
+        store.isLoaded = true;
       })
       .catch(error => {
         console.log(error);

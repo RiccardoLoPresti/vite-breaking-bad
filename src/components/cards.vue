@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <div class="col-8 col-md-6 col-lg-4 col-xxl-3">
+    <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
 
         <div class="rl-card pt-4 mx-2 text-center mt-4 mb-3">
             <img :src="objectCard.img" alt="">
