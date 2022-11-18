@@ -1,11 +1,13 @@
 <script>
 
 import AppList from './AppList.vue'
+import AppSearch from './AppSearch.vue'
 
 export default {
     name:'AppMain',
     components:{
-        AppList
+        AppList,
+        AppSearch
     }
 }
 </script>
@@ -13,18 +15,13 @@ export default {
 <template>
 
   <div class="d-flex container rl justify-content-end">
-    <select class="form-select" aria-label="Default select example">
-        <option selected disabled hidden>Select Category</option>
-        <option value="1">Breaking Bad</option>
-        <option value="2">Better Call Soul</option>
-    </select>
+    <AppSearch/>
   </div>
 
   <div class="container my-4 p-3">
-
     <AppList/>
-
   </div>
+
 </template>
 
 
@@ -35,8 +32,5 @@ export default {
 }
 .container{
     background-color: #ffff;
-}
-select{
-    width: 200px;
 }
 </style>

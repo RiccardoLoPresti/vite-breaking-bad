@@ -19,7 +19,11 @@ export default {
   methods:{
     getApi(){
       store.isLoaded = false;
-      axios.get(store.apiUrl)
+      axios.get(store.apiUrl, {
+        params:{
+          category: store.searchValue
+        }
+      })
       .then(result => {
         store.characterList = result.data
         store.isLoaded = true;
