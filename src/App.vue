@@ -3,13 +3,15 @@ import axios from 'axios';
 import {store} from '../src/data/store'
 
 import AppHeader from '../src/components/AppHeader.vue'
+import AppSearch from '../src/components/AppSearch.vue'
 import AppMain from '../src/components/AppMain.vue'
 
 export default {
   name:'App',
   components:{
     AppHeader,
-    AppMain
+    AppMain,
+    AppSearch
   },
   data(){
     return{
@@ -42,6 +44,7 @@ export default {
 <template>
 
   <AppHeader/>
+  <AppSearch @search="this.getApi()"/>
   <AppMain/>
 
 </template>
